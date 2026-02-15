@@ -3,12 +3,12 @@ uvicorn==0.29.0
 pydantic==1.10.13
 python-dotenv==1.0.1
 
-torch==2.6.0
-whisper==1.1.10
 numpy==1.26.4
 scipy==1.11.4
 soundfile==0.12.1
 sounddevice==0.4.6
+
+whisper==1.1.10
 faiss-cpu==1.7.4
 
 langchain==0.2.10
@@ -16,7 +16,7 @@ langchain-core==0.2.22
 langchain-community==0.2.10
 langchainhub==0.1.15
 langchain-google-genai==0.0.11
-langchain-text-splitters==0.2.2   
+langchain-text-splitters==0.2.2
 
 google-generativeai==0.7.2
 
