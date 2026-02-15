@@ -63,7 +63,7 @@ def record():
     return "recording.wav"
 
 def transcribe():
-    model_w = whisper.load_model("small",device="cuda")
+    model_w = whisper.load_model("base",device="cuda")
     result = model_w.transcribe("recording.wav",task="translate", language="en")
     trans_text = result["text"]
     print("Transcription:", trans_text)
