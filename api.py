@@ -297,7 +297,7 @@ async def transcribe_audio(file: UploadFile = File(...)):
             buffer.write(content)
         
         # Load model and transcribe
-        model_w = whisper.load_model("medium", device="cuda" if torch.cuda.is_available() else "cpu")
+        model_w = whisper.load_model("base", device="cuda" if torch.cuda.is_available() else "cpu")
         result = model_w.transcribe(temp_path,task="translate", language="en")
         
         # Cleanup

@@ -9,7 +9,9 @@ soundfile==0.12.1
 sounddevice==0.4.6
 
 whisper==1.1.10
-faiss-cpu==1.7.4
+
+# IMPORTANT: FAISS version for Python 3.10 + torch 2.2
+faiss-cpu==1.8.0
 
 langchain==0.2.10
 langchain-core==0.2.22

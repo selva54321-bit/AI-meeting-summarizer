@@ -1,10 +1,10 @@
-FROM python:3.12.7
+FROM python:3.10-slim
 
 WORKDIR /app
 
 COPY requirements.txt .
 
-# install CPU torch only
+# CPU-only torch 2.2.0 (IMPORTANT)
 RUN pip install --no-cache-dir torch==2.2.0 --index-url https://download.pytorch.org/whl/cpu
 
 RUN pip install --no-cache-dir -r requirements.txt
