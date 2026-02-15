@@ -41,8 +41,12 @@ from google.auth.transport.requests import Request
 # ----------------------
 # Model setup
 # ----------------------
-if not os.environ.get("GOOGLE_API_KEY"):
-    os.environ["GOOGLE_API_KEY"] = "AIzaSyDd1UQ2Eax8BfsZl-dJQo0k5X9rrhYhNfA"
+# if not os.environ.get("GOOGLE_API_KEY"):
+#     os.environ["GOOGLE_API_KEY"] = GEMINI_API_KEY
+from dotenv import load_dotenv
+
+load_dotenv()
+GEMINI_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 model = init_chat_model("gemini-2.5-flash", model_provider="google_genai",convert_system_message_to_human=True)
 
