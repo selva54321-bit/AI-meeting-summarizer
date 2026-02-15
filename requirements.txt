@@ -14,11 +14,11 @@ whisper==1.1.10
 faiss-cpu==1.8.0
 
 langchain==0.2.10
-langchain-core==0.2.23
+langchain-core==0.2.43
 langchain-community==0.2.10
-langchainhub==0.1.15
+langchainhub==0.1.21
 langchain-google-genai==0.0.11
-langchain-text-splitters==0.2.2
+langchain-text-splitters==0.2.4
 
 google-generativeai==0.7.2
 
